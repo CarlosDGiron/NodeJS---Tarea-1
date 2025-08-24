@@ -18,6 +18,7 @@ crudEstudiantes.cud = (req, res) => {
     const btnCrear = req.body.btnCrear;
     const btnElimiar = req.body.btnElimiar;
     const btnModificar = req.body.btnModificar;
+    
     const id_estudiante = req.body.txtID;
     const carnet = req.body.txtCarnet;
     const nombres = req.body.txtNombres;
@@ -27,7 +28,8 @@ crudEstudiantes.cud = (req, res) => {
     const correo_electronico = req.body.txtCorreoElectronico;
     const id_tipo_sangre = req.body.sltcTipoSangre;
     const fecha_nacimiento = req.body.txtFechaNacimiento;
-
+    console.log(id_estudiante+" - "+carnet+" - "+nombres+" - "+apellidos+" - "+direccion+" - "+telefono+" - "+correo_electronico+" - "+id_tipo_sangre+" - "+fecha_nacimiento);
+                    
     if (btnCrear) {
         db.query('insert into estudiantes set ?',
             { carnet: carnet, nombres: nombres, apellidos: apellidos, direccion: direccion, telefono: telefono, correo_electronico: correo_electronico, id_tipo_sangre: id_tipo_sangre, fecha_nacimiento: fecha_nacimiento },
