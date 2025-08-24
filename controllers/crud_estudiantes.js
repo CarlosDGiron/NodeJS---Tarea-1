@@ -28,7 +28,6 @@ crudEstudiantes.cud = (req, res) => {
     const id_tipo_sangre = req.body.sltcTipoSangre;
     const fecha_nacimiento = req.body.txtFechaNacimiento;
 
-    console.log(carnet);
     if (btnCrear) {
         db.query('insert into estudiantes set ?',
             { carnet: carnet, nombres: nombres, apellidos: apellidos, direccion: direccion, telefono: telefono, correo_electronico: correo_electronico, id_tipo_sangre: id_tipo_sangre, fecha_nacimiento: fecha_nacimiento },

@@ -21,41 +21,41 @@
                 <div class="col-1 mb-3">
                     <label for="txtID" class="form-label">ID</label>
                     <input type="text" class="form-control" name="txtID" id="txtID" aria-describedby="helpId"
-                        placeholder="ID" />
+                        placeholder="ID" disabled/>
                 </div>
                 <div class="col-1 mb-3">
                     <label for="txtCarnet" class="form-label">Carnet</label>
                     <input type="text" class="form-control" name="txtCarnet" id="txtCarnet" aria-describedby="helpId"
-                        placeholder="Carnet" />
+                        placeholder="E000-E999" pattern="^E\d{3}$" required/>
                 </div>
                 <div class="col-5 mb-3">
                     <label for="txtNombres" class="form-label">Nombres</label>
                     <input type="text" class="form-control" name="txtNombres" id="txtNombres" aria-describedby="helpId"
-                        placeholder="Nombres..." />
+                        placeholder="Nombres..." required  />
                 </div>
                 <div class="col-5 mb-3">
                     <label for="txtApellidos" class="form-label">Apellidos</label>
                     <input type="text" class="form-control" name="txtApellidos" id="txtApellidos"
-                        aria-describedby="helpId" placeholder="Apellidos..." />
+                        aria-describedby="helpId" placeholder="Apellidos..." required  />
                 </div>
             </div>
             <div class="row align-items-center mb-3">
                 <div class="col-12 mb-3">
                     <label for="txtDireccion" class="form-label">Dirección</label>
                     <input type="text" class="form-control" name="txtDireccion" id="txtDireccion"
-                        aria-describedby="helpId" placeholder="Dirección..." />
+                        aria-describedby="helpId" placeholder="Dirección..." required  />
                 </div>
             </div>
             <div class="row align-items-center mb-3">
                 <div class="col-3 mb-3">
                     <label for="txtTelefono" class="form-label">Teléfono</label>
                     <input type="number" class="form-control" name="txtTelefono" id="txtTelefono"
-                        aria-describedby="helpId" placeholder="12345678" />
+                        aria-describedby="helpId" placeholder="12345678" required  />
                 </div>
                 <div class="col-5 mb-3">
                     <label for="txtCorreoElectronico" class="form-label">Correo Electrónico</label>
                     <input type="text" class="form-control" name="txtCorreoElectronico" id="txtCorreoElectronico"
-                        aria-describedby="helpId" placeholder="correo@dominio.com" />
+                        aria-describedby="helpId" placeholder="correo@dominio.com" required  />
                 </div>
                 <div class="col-2 mb-3">
                     <label for="sltcTipoSangre" class="form-label">Tipo de Sangre</label>
@@ -73,7 +73,7 @@
                 <div class="col-2 mb-3">
                     <label for="txtFechaNacimiento" class="form-label">Fecha de Nacimiento</label>
                     <input type="date" class="form-control" name="txtFechaNacimiento" id="txtFechaNacimiento"
-                        aria-describedby="helpId" placeholder="dd/mm/yyyy" />
+                        aria-describedby="helpId" placeholder="dd/mm/yyyy" required  />
                 </div>
             </div>
             <div class="row align-items-center mb-3">
